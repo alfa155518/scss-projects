@@ -1,0 +1,17 @@
+@use "../helpers/variables" as *;
+@use "../helpers/mixins" as *;
+
+/* Section Heading Component */
+.section-heading {
+  background: $main-color;
+  text-align: center;
+  width: 276px;
+  margin: 20px auto;
+  padding: 6px 15px;
+  color: #eee;
+  border-radius: 5px;
+  text-transform: uppercase;
+  @include mobile-screens(572px) {
+    width: fit-content;
+  }
+}

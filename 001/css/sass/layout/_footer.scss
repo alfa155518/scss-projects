@@ -1,0 +1,47 @@
+@use "../helpers/variables" as *;
+@use "../components/buttons" as *;
+
+/* Start Footer */
+
+footer {
+  background-color: #ded9d9;
+  .element-footer {
+    display: flex;
+    flex-wrap: wrap;
+    ul {
+      flex: 1;
+      h4 {
+        color: #ddd;
+        font-size: 22px;
+      }
+      li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img {
+          max-width: 100%;
+        }
+        .info {
+          h5 {
+            font-size: 20px;
+            font-weight: bold;
+            color: $main-color;
+          }
+        }
+      }
+      // Form
+      form {
+        input {
+          width: 90%;
+          margin: 20px auto;
+          padding: 7px;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+/* End Footer */

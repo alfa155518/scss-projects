@@ -1,0 +1,41 @@
+// Animation
+
+@mixin allAnimation($animationName) {
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+// Transition
+@mixin transition($time) {
+  transition: $time + s;
+  -webkit-transition: $time + s;
+  -moz-transition: $time + s;
+  -ms-transition: $time + s;
+  -o-transition: $time + s;
+}
+
+// Grid
+@mixin grid($dimension) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($dimension, 1fr));
+}
+
+// Media Screens
+@mixin mobile-screens($diminution) {
+  @media (max-width: $diminution) {
+    @content;
+  }
+}
+@mixin medium-screens($diminution) {
+  @media (max-width: $diminution) {
+    @content;
+  }
+}
+
+// appear Class
+@mixin appear() {
+  .appear {
+    @content;
+  }
+}

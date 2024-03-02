@@ -1,0 +1,17 @@
+@use "../helpers/variables" as *;
+@use "../helpers/mixins" as *;
+
+// Global Btn
+.btn {
+  color: #fff;
+  border: none;
+  display: block;
+  background-color: rgba($main-color, 0.8);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 6px 25px;
+  @include transition(1);
+  &:hover {
+    background-color: $main-color;
+  }
+}
